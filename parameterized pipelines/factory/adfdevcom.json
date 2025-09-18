@@ -1,0 +1,9 @@
+{
+	"name": "adfdevcom",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "338b9e75-3e36-44a4-abb2-6dcc830e7b25",
+		"tenantId": "57c99abf-5077-4432-9ee0-cbcfc24b809b"
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"name": "nocsParameters",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlob",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"P_container": {
+				"type": "String"
+			},
+			"P_folder": {
+				"type": "String"
+			},
+			"P_file": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().P_file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().P_folder",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().P_container",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

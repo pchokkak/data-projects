@@ -1,0 +1,32 @@
+{
+	"name": "trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_rawToBronze",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2025-09-12T13:58:00",
+				"timeZone": "India Standard Time",
+				"schedule": {
+					"minutes": [
+						25
+					],
+					"hours": [
+						12
+					]
+				}
+			}
+		}
+	}
+}
